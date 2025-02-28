@@ -8,7 +8,7 @@
 
 ## Statement
 
-Implement a web server that uses the following advanced I/O operations:
+Implemented a web server that uses the following advanced I/O operations:
 
 - Asynchronous operations on files
 - Non-blocking operations on sockets
@@ -64,12 +64,12 @@ Follow the `TODO` areas in the file to start your implementation.
 
 > It can be reorganized as desired, as long as all the requirements of the assignment are implemented.
 
-## Testing and Grading
+## Testing
 
 The testing is automated.
 Tests are located in the `tests/` directory.
 
-To test your implementation, do the following steps:
+To test the implementation, do the following steps:
 
 - Run the `make` command inside the `skel/` directory and make sure it compiles with no errors and that the `aws` executable is generated.
 - Run the `make check` command in the `tests/` directory.
