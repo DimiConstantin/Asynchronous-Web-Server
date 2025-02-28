@@ -1,0 +1,22 @@
+cd .. && checkpatch.pl -f src/*.c src/*.h src/samples/*.c src/utils/*.c src/utils/*.h tests/_test/*.c
+/bin/sh: 1: checkpatch.pl: not found
+make: [Makefile:20: lint] Error 127 (ignored)
+cd .. && checkpatch.pl -f checker/*.sh tests/*.sh tests/_test/*.sh
+/bin/sh: 1: checkpatch.pl: not found
+make: [Makefile:21: lint] Error 127 (ignored)
+cd .. && cpplint --recursive src/ tests/ checker/
+Done processing src/aws.c
+Done processing src/aws.h
+Ignoring "src/http-parser/http_parser.c": file excluded by "/home/dimi/facultate/SO/assignment-async-web-server/src/http-parser/CPPLINT.cfg". File path component "http_parser.c" matches pattern "http_parser\.(c|h)"
+Ignoring "src/http-parser/http_parser.h": file excluded by "/home/dimi/facultate/SO/assignment-async-web-server/src/http-parser/CPPLINT.cfg". File path component "http_parser.h" matches pattern "http_parser\.(c|h)"
+Ignoring "src/http-parser/samples/test_get_request_path.c": file excluded by "/home/dimi/facultate/SO/assignment-async-web-server/src/http-parser/samples/CPPLINT.cfg". File path component "test_get_request_path.c" matches pattern "test_get_request_path\.c"
+Ignoring "src/http-parser/test.c": file excluded by "/home/dimi/facultate/SO/assignment-async-web-server/src/http-parser/CPPLINT.cfg". File path component "test.c" matches pattern "test\.c"
+Ignoring "src/samples/epoll_echo_server.c": file excluded by "/home/dimi/facultate/SO/assignment-async-web-server/src/samples/CPPLINT.cfg". File path component "epoll_echo_server.c" matches pattern "epoll_echo_server\.c"
+Ignoring "src/samples/http_reply_once.c": file excluded by "/home/dimi/facultate/SO/assignment-async-web-server/src/samples/CPPLINT.cfg". File path component "http_reply_once.c" matches pattern "http_reply_once\.c"
+Done processing src/utils/debug.h
+Done processing src/utils/sock_util.c
+Done processing src/utils/sock_util.h
+Done processing src/utils/util.h
+Done processing src/utils/w_epoll.h
+Ignoring "tests/_test/sockop_preload.c": file excluded by "/home/dimi/facultate/SO/assignment-async-web-server/tests/_test/CPPLINT.cfg". File path component "sockop_preload.c" matches pattern "sockop_preload\.c"
+cd .. && shellcheck checker/*.sh tests/*.sh tests/_test/*.sh
